@@ -263,7 +263,119 @@ h3 {
 .attribution {
   font-size: 11px;
   text-align: center;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(192, 100%, 9%);
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: hsl(0, 0%, 100%);
+}
+/************mobile-view**********/
+@media screen and (max-width: 480px) {
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+  .site-header {
+    margin: 6% 6% 12%;
+  }
+  .site-header > h1 {
+    font-size: 26px;
+    margin-top: 30%;
+  }
+  .site-header > p {
+    margin: 8% 0% 16%;
+    font-size: 14px;
+  }
+  .header-btn {
+    height: 42px;
+  }
+  .site-header > img {
+    margin-top: 25%;
+  }
+  .navbar > img {
+    width: 36%;
+  }
+  .nav-btn {
+    height: 32px;
+    width: 104px;
+  }
+  .site-body {
+    text-align: center;
+  }
+  .body-part1,
+  .body-part2,
+  .body-part3,
+  .body-part4 {
+    grid-template-columns: auto;
+  }
+  .body-part1 img {
+    width: 14%;
+  }
+  .left-portion,
+  .right-portion {
+    margin-top: 20%;
+  }
+  .body-part2 .left-portion,
+  .body-part3 .right-portion,
+  .body-part4 .left-portion {
+    grid-area: 2/1/3/2;
+  }
+  .body-part2 .right-portion,
+  .body-part3 .left-portion,
+  .body-part4 .right-portion {
+    grid-area: 1/1/2/2;
+  }
+  .body-part2 .left-portion,
+  .body-part4 .left-portion {
+    padding: 0%;
+  }
+  .body-part3 .right-portion {
+    padding: 0%;
+  }
+  .body-part2 h1,
+  .body-part3 h1,
+  .body-part4 h1 {
+    font-size: 26px;
+  }
+  .body-part2 p,
+  .body-part3 p,
+  .body-part4 p {
+    font-size: 14px;
+  }
+  .body-part5 > h1 {
+    font-size: 28px;
+  }
+  .body-part5-btn {
+    margin-top: 10%;
+    height: 48px;
+  }
+  .site-footer {
+    flex-direction: column-reverse;
+    font-size: 14px;
+  }
+  .site-footer .left-portion,
+  .site-footer .right-portion,
+  .site-footer .right-portion > p {
+    padding: 0%;
+  }
+  .email-field {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  #email {
+    width: 100%;
+    margin: 0%;
+  }
+  .email-field-btn {
+    margin-top: 4%;
+    padding: 0% 12%;
+  }
+  .contact {
+    margin: 6% 0% 15%;
+  }
+  li {
+    margin-top: 4%;
+  }
 }
